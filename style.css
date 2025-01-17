@@ -1,0 +1,219 @@
+.background {
+  background-color: #fff4ea;
+}
+body {
+  text-align: center;
+  margin: 0;
+  color: #c96868;
+}
+.top-title {
+  padding-top: 100px;
+}
+.top-cloud {
+  position: absolute;
+  top: 10%; /* Position from the top relative to the viewport */
+  left: 75%; /* Position from the left relative to the viewport */
+  width: 20%; /* Adjust size relative to viewport width */
+  max-width: 200px; /* Optional: Limit maximum size */
+}
+h1 {
+  font-family: "Dancing Script", serif;
+  font-size: 100px;
+  margin: 0;
+  padding: 50px;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 25%; /* Position from the left relative to the viewport */
+  width: 20%; /* Adjust size relative to viewport width */
+  max-width: 200px; /* Optional: Limit maximum size */
+}
+h2 {
+  font-family: "Maven Pro", serif;
+  font-size: 40px;
+}
+.mountain {
+    position: relative; /* Change to relative for responsive adjustments */
+    width: 40%; /* Set width relative to the viewport */
+    max-width: 500px; /* Optional: Limit maximum size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center horizontally */
+    bottom: 0; /* Align at the bottom */
+}
+.profile-img {
+  height: 200px;
+}
+.middle-part {
+  margin: 100px 0;
+}
+.intro {
+  width: 30%;
+  margin: auto;
+  color: black;
+  line-height: 2;
+  font-size: 1.2em;
+}
+hr {
+  border: dotted #fff4ea 6px;
+  width: 4%;
+  border-bottom: none;
+  margin: 100px auto;
+}
+h3 {
+  font-family: "Maven Pro", serif;
+  font-size: 1.5rem;
+}
+p {
+  font-family: "Maven Pro", serif;
+  color: black;
+  font-size: 1.2em;
+}
+.music-img {
+  height: 200px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.parent {
+  display: grid;
+  height: auto;
+  grid-template-columns: 0.5fr 1fr;
+  grid-row: 1fr;
+  margin: 100px 300px 0 300px;
+}
+.invite {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.email-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c96868;
+  color: white;
+  text-decoration: none;
+  font-family: "Maven Pro", serif;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.email-button:hover {
+  background-color: #d57171;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.footer {
+  background-color: #fff4ea;
+  font-family: "Maven Pro", serif;
+  padding: 20px 0;
+}
+a {
+  margin: 10px 20px;
+  text-decoration: none;
+  color: #c96868;
+}
+.copyright {
+  font-size: 0.75rem;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+/* For tablets (768px and up) */
+@media (max-width: 1024px) {
+  .top-title {
+    padding-top: 50px;
+  }
+
+  .middle-part {
+    margin: 50px 0;
+  }
+
+  .parent {
+    grid-template-columns: 1fr; /* Single column for grid */
+    margin: 50px 20px; /* Reduce margins */
+  }
+
+  .intro,
+  .invite {
+    width: 80%; /* Increase text width */
+  }
+
+  .profile-img {
+    height: 150px; /* Smaller profile image */
+  }
+
+  h1 {
+    font-size: 60px; /* Smaller title font */
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .music-img {
+    height: 150px; /* Smaller music icon */
+  }
+}
+
+/* For cell phones (480px and up) */
+@media (max-width: 768px) {
+  .top-title {
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .parent {
+    grid-template-columns: 1fr; /* Single column layout */
+    margin: 20px 10px;
+  }
+
+  .intro,
+  .invite {
+    width: 90%;
+  }
+
+  .profile-img,
+  .music-img {
+    height: 120px; /* Smaller icons */
+  }
+
+  .email-button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+
+/* For widescreens (greater than 1280px) */
+@media (min-width: 1280px) {
+  .parent {
+    grid-template-columns: 0.3fr 0.7fr; /* Adjust grid proportion */
+    margin: 100px 200px;
+  }
+
+  h1 {
+    font-size: 120px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .profile-img {
+    height: 250px; /* Larger profile image */
+  }
+}
